@@ -7,23 +7,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hystrix" />
-        <module name="zuul" />
-        <module name="nativeconfigserver" />
-        <module name="naticeconfigclient" />
-        <module name="resttemplate" />
-        <module name="feign" />
         <module name="ribbon" />
-        <module name="comsumer" />
-        <module name="eurekaserver" />
+        <module name="Configserver" />
+        <module name="feign" />
+        <module name="nativeconfigserver" />
+        <module name="zuul" />
+        <module name="naticeconfigclient" />
+        <module name="hystrix" />
+        <module name="zipkin" />
+        <module name="configclient" />
         <module name="eurekaclient" />
+        <module name="comsumer" />
+        <module name="zipkinclient" />
+        <module name="resttemplate" />
+        <module name="eurekaserver" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Configserver" options="-parameters" />
       <module name="aispringcloud" options="-parameters" />
       <module name="comsumer" options="-parameters" />
+      <module name="configclient" options="-parameters" />
       <module name="eurekaclient" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
       <module name="feign" options="-parameters" />
@@ -32,6 +38,8 @@
       <module name="nativeconfigserver" options="-parameters" />
       <module name="resttemplate" options="-parameters" />
       <module name="ribbon" options="-parameters" />
+      <module name="zipkin" options="-parameters" />
+      <module name="zipkinclient" options="-parameters" />
       <module name="zuul" options="-parameters" />
     </option>
   </component>
